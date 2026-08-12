@@ -34,6 +34,8 @@ def main(
 
     if lane:
         origin, _, dest = lane.partition("-")
+    if demo and not (origin or dest):
+        origin, dest = "CNSHA", "USA"
     if not origin or not dest:
         raise typer.BadParameter("provide --lane ORIGIN-DEST or --origin and --dest")
 
@@ -56,3 +58,7 @@ def main(
         print(json.dumps(to_dict(analysis), indent=2))
     else:
         render(analysis)
+
+
+if __name__ == "__main__":
+    app()
