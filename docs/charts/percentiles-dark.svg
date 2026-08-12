@@ -1,0 +1,38 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="760" height="340" viewBox="0 0 760 340" role="img">
+<text x="20.0" y="26.0" font-family="system-ui, -apple-system, Segoe UI, sans-serif" font-size="16" fill="#ffffff" text-anchor="start" font-weight="600" style="">When has 80% of the cargo actually arrived?</text>
+<text x="20.0" y="44.0" font-family="system-ui, -apple-system, Segoe UI, sans-serif" font-size="12" fill="#c3c2b7" text-anchor="start" font-weight="normal" style="">Share of shipments arrived by each day — with and without the in-transit evidence.</text>
+<rect x="494.8" y="17.0" width="10" height="10" rx="2" fill="#3987e5"/>
+<text x="509.8" y="26.0" font-family="system-ui, -apple-system, Segoe UI, sans-serif" font-size="12" fill="#c3c2b7" text-anchor="start" font-weight="normal" style="">completed only</text>
+<rect x="632.6" y="17.0" width="10" height="10" rx="2" fill="#d95926"/>
+<text x="647.6" y="26.0" font-family="system-ui, -apple-system, Segoe UI, sans-serif" font-size="12" fill="#c3c2b7" text-anchor="start" font-weight="normal" style="">all evidence</text>
+<line x1="52.0" y1="300.0" x2="734.0" y2="300.0" stroke="#2c2c2a" stroke-width="1.0"/>
+<text x="44.0" y="304.0" font-family="system-ui, -apple-system, Segoe UI, sans-serif" font-size="11" fill="#898781" text-anchor="end" font-weight="normal" style="font-variant-numeric: tabular-nums;">0%</text>
+<line x1="52.0" y1="256.0" x2="734.0" y2="256.0" stroke="#2c2c2a" stroke-width="1.0"/>
+<text x="44.0" y="260.0" font-family="system-ui, -apple-system, Segoe UI, sans-serif" font-size="11" fill="#898781" text-anchor="end" font-weight="normal" style="font-variant-numeric: tabular-nums;">20%</text>
+<line x1="52.0" y1="212.0" x2="734.0" y2="212.0" stroke="#2c2c2a" stroke-width="1.0"/>
+<text x="44.0" y="216.0" font-family="system-ui, -apple-system, Segoe UI, sans-serif" font-size="11" fill="#898781" text-anchor="end" font-weight="normal" style="font-variant-numeric: tabular-nums;">40%</text>
+<line x1="52.0" y1="168.0" x2="734.0" y2="168.0" stroke="#2c2c2a" stroke-width="1.0"/>
+<text x="44.0" y="172.0" font-family="system-ui, -apple-system, Segoe UI, sans-serif" font-size="11" fill="#898781" text-anchor="end" font-weight="normal" style="font-variant-numeric: tabular-nums;">60%</text>
+<line x1="52.0" y1="80.0" x2="734.0" y2="80.0" stroke="#2c2c2a" stroke-width="1.0"/>
+<text x="44.0" y="84.0" font-family="system-ui, -apple-system, Segoe UI, sans-serif" font-size="11" fill="#898781" text-anchor="end" font-weight="normal" style="font-variant-numeric: tabular-nums;">100%</text>
+<line x1="52.0" y1="124.0" x2="734.0" y2="124.0" stroke="#c3c2b7" stroke-width="1.2" stroke-dasharray="5 4"/>
+<text x="44.0" y="128.0" font-family="system-ui, -apple-system, Segoe UI, sans-serif" font-size="11" fill="#c3c2b7" text-anchor="end" font-weight="600" style="font-variant-numeric: tabular-nums;">80%</text>
+<text x="52.0" y="318.0" font-family="system-ui, -apple-system, Segoe UI, sans-serif" font-size="11" fill="#898781" text-anchor="middle" font-weight="normal" style="font-variant-numeric: tabular-nums;">0</text>
+<text x="149.4" y="318.0" font-family="system-ui, -apple-system, Segoe UI, sans-serif" font-size="11" fill="#898781" text-anchor="middle" font-weight="normal" style="font-variant-numeric: tabular-nums;">1</text>
+<text x="246.9" y="318.0" font-family="system-ui, -apple-system, Segoe UI, sans-serif" font-size="11" fill="#898781" text-anchor="middle" font-weight="normal" style="font-variant-numeric: tabular-nums;">2</text>
+<text x="344.3" y="318.0" font-family="system-ui, -apple-system, Segoe UI, sans-serif" font-size="11" fill="#898781" text-anchor="middle" font-weight="normal" style="font-variant-numeric: tabular-nums;">3</text>
+<text x="441.7" y="318.0" font-family="system-ui, -apple-system, Segoe UI, sans-serif" font-size="11" fill="#898781" text-anchor="middle" font-weight="normal" style="font-variant-numeric: tabular-nums;">4</text>
+<text x="539.1" y="318.0" font-family="system-ui, -apple-system, Segoe UI, sans-serif" font-size="11" fill="#898781" text-anchor="middle" font-weight="normal" style="font-variant-numeric: tabular-nums;">5</text>
+<text x="636.6" y="318.0" font-family="system-ui, -apple-system, Segoe UI, sans-serif" font-size="11" fill="#898781" text-anchor="middle" font-weight="normal" style="font-variant-numeric: tabular-nums;">6</text>
+<text x="734.0" y="318.0" font-family="system-ui, -apple-system, Segoe UI, sans-serif" font-size="11" fill="#898781" text-anchor="middle" font-weight="normal" style="font-variant-numeric: tabular-nums;">7</text>
+<text x="393.0" y="333.0" font-family="system-ui, -apple-system, Segoe UI, sans-serif" font-size="11" fill="#898781" text-anchor="middle" font-weight="normal" style="">days since departure</text>
+<path d="M 52.0 293.5 H 149.4 V 288.5 H 246.9 V 219.7 H 344.3 V 184.7 H 441.7 V 149.9 H 539.1 V 114.9 H 636.6 V 80.0 H 734.0 V 80.0" fill="none" stroke="#3987e5" stroke-width="2" stroke-linejoin="round"/>
+<path d="M 52.0 294.0 H 149.4 V 289.4 H 246.9 V 225.3 H 344.3 V 192.5 H 441.7 V 159.0 H 539.1 V 124.7 H 636.6 V 89.0 H 734.0 V 89.0" fill="none" stroke="#d95926" stroke-width="2" stroke-linejoin="round"/>
+<circle cx="539.1" cy="124.0" r="5" fill="#3987e5"/>
+<text x="539.1" y="114.0" font-family="system-ui, -apple-system, Segoe UI, sans-serif" font-size="12" fill="#3987e5" text-anchor="middle" font-weight="600" style="">day 5</text>
+<circle cx="636.6" cy="124.0" r="5" fill="#d95926"/>
+<text x="636.6" y="114.0" font-family="system-ui, -apple-system, Segoe UI, sans-serif" font-size="12" fill="#d95926" text-anchor="middle" font-weight="600" style="">day 6</text>
+<text x="587.9" y="179.0" font-family="system-ui, -apple-system, Segoe UI, sans-serif" font-size="11" fill="#898781" text-anchor="middle" font-weight="normal" style="">one day apart — the optimism</text>
+<text x="587.9" y="193.0" font-family="system-ui, -apple-system, Segoe UI, sans-serif" font-size="11" fill="#898781" text-anchor="middle" font-weight="normal" style="">you were about to plan on</text>
+<line x1="52.0" y1="300.0" x2="734.0" y2="300.0" stroke="#383835" stroke-width="1.2"/>
+</svg>

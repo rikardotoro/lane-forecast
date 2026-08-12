@@ -1,0 +1,38 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="760" height="330" viewBox="0 0 760 330" role="img">
+<text x="20.0" y="26.0" font-family="system-ui, -apple-system, Segoe UI, sans-serif" font-size="16" fill="#0b0b0b" text-anchor="start" font-weight="600" style="">A shipment that hasn't arrived is not missing data</text>
+<text x="20.0" y="44.0" font-family="system-ui, -apple-system, Segoe UI, sans-serif" font-size="12" fill="#52514e" text-anchor="start" font-weight="normal" style="">Last three weeks of the demo lane. Every orange bar is evidence: transit is at least this long.</text>
+<rect x="598.0" y="77.0" width="10" height="10" rx="2" fill="#2a78d6"/>
+<text x="613.0" y="86.0" font-family="system-ui, -apple-system, Segoe UI, sans-serif" font-size="12" fill="#52514e" text-anchor="start" font-weight="normal" style="">arrived</text>
+<rect x="598.0" y="97.0" width="10" height="10" rx="2" fill="#eb6834"/>
+<text x="613.0" y="106.0" font-family="system-ui, -apple-system, Segoe UI, sans-serif" font-size="12" fill="#52514e" text-anchor="start" font-weight="normal" style="">still in transit</text>
+<line x1="20.0" y1="68.0" x2="20.0" y2="296.0" stroke="#e1e0d9" stroke-width="1.0"/>
+<text x="20.0" y="314.0" font-family="system-ui, -apple-system, Segoe UI, sans-serif" font-size="11" fill="#898781" text-anchor="middle" font-weight="normal" style="font-variant-numeric: tabular-nums;">Aug 03</text>
+<line x1="191.0" y1="68.0" x2="191.0" y2="296.0" stroke="#e1e0d9" stroke-width="1.0"/>
+<text x="191.0" y="314.0" font-family="system-ui, -apple-system, Segoe UI, sans-serif" font-size="11" fill="#898781" text-anchor="middle" font-weight="normal" style="font-variant-numeric: tabular-nums;">Aug 10</text>
+<line x1="362.1" y1="68.0" x2="362.1" y2="296.0" stroke="#e1e0d9" stroke-width="1.0"/>
+<text x="362.1" y="314.0" font-family="system-ui, -apple-system, Segoe UI, sans-serif" font-size="11" fill="#898781" text-anchor="middle" font-weight="normal" style="font-variant-numeric: tabular-nums;">Aug 17</text>
+<line x1="533.1" y1="68.0" x2="533.1" y2="296.0" stroke="#e1e0d9" stroke-width="1.0"/>
+<text x="533.1" y="314.0" font-family="system-ui, -apple-system, Segoe UI, sans-serif" font-size="11" fill="#898781" text-anchor="middle" font-weight="normal" style="font-variant-numeric: tabular-nums;">Aug 24</text>
+<line x1="557.6" y1="62.0" x2="557.6" y2="296.0" stroke="#52514e" stroke-width="1.4" stroke-dasharray="4 3"/>
+<text x="557.6" y="56.0" font-family="system-ui, -apple-system, Segoe UI, sans-serif" font-size="12" fill="#52514e" text-anchor="middle" font-weight="600" style="">today</text>
+<path d="M 44.4 77.3 H 138.2 Q 142.2 77.3 142.2 81.3 V 81.3 Q 142.2 85.3 138.2 85.3 H 44.4 Z" fill="#2a78d6"/>
+<path d="M 68.9 96.0 H 138.2 Q 142.2 96.0 142.2 100.0 V 100.0 Q 142.2 104.0 138.2 104.0 H 68.9 Z" fill="#2a78d6"/>
+<path d="M 117.7 114.7 H 162.6 Q 166.6 114.7 166.6 118.7 V 118.7 Q 166.6 122.7 162.6 122.7 H 117.7 Z" fill="#2a78d6"/>
+<path d="M 166.6 133.3 H 211.5 Q 215.5 133.3 215.5 137.3 V 137.3 Q 215.5 141.3 211.5 141.3 H 166.6 Z" fill="#2a78d6"/>
+<path d="M 215.5 152.0 H 260.3 Q 264.3 152.0 264.3 156.0 V 156.0 Q 264.3 160.0 260.3 160.0 H 215.5 Z" fill="#2a78d6"/>
+<path d="M 239.9 170.7 H 333.7 Q 337.7 170.7 337.7 174.7 V 174.7 Q 337.7 178.7 333.7 178.7 H 239.9 Z" fill="#2a78d6"/>
+<path d="M 288.8 189.3 H 333.7 Q 337.7 189.3 337.7 193.3 V 193.3 Q 337.7 197.3 333.7 197.3 H 288.8 Z" fill="#2a78d6"/>
+<path d="M 288.8 208.0 H 557.6 Q 557.6 208.0 557.6 208.0 V 216.0 Q 557.6 216.0 557.6 216.0 H 288.8 Z" fill="#eb6834"/>
+<path d="M 560.6 208.0 L 567.6 212.0 L 560.6 216.0 Z" fill="#eb6834"/>
+<text x="573.6" y="216.0" font-family="system-ui, -apple-system, Segoe UI, sans-serif" font-size="12" fill="#eb6834" text-anchor="start" font-weight="600" style="">≥ 11 days and counting</text>
+<path d="M 362.1 226.7 H 557.6 Q 557.6 226.7 557.6 226.7 V 234.7 Q 557.6 234.7 557.6 234.7 H 362.1 Z" fill="#eb6834"/>
+<path d="M 560.6 226.7 L 567.6 230.7 L 560.6 234.7 Z" fill="#eb6834"/>
+<path d="M 435.4 245.3 H 557.6 Q 557.6 245.3 557.6 245.3 V 253.3 Q 557.6 253.3 557.6 253.3 H 435.4 Z" fill="#eb6834"/>
+<path d="M 560.6 245.3 L 567.6 249.3 L 560.6 253.3 Z" fill="#eb6834"/>
+<path d="M 484.3 264.0 H 557.6 Q 557.6 264.0 557.6 264.0 V 272.0 Q 557.6 272.0 557.6 272.0 H 484.3 Z" fill="#eb6834"/>
+<path d="M 560.6 264.0 L 567.6 268.0 L 560.6 272.0 Z" fill="#eb6834"/>
+<path d="M 557.6 282.7 H 557.6 Q 557.6 282.7 557.6 282.7 V 290.7 Q 557.6 290.7 557.6 290.7 H 557.6 Z" fill="#eb6834"/>
+<path d="M 560.6 282.7 L 567.6 286.7 L 560.6 290.7 Z" fill="#eb6834"/>
+<text x="598.0" y="314.0" font-family="system-ui, -apple-system, Segoe UI, sans-serif" font-size="11" fill="#898781" text-anchor="start" font-weight="normal" style="">drop these rows and the lane</text>
+<text x="598.0" y="327.0" font-family="system-ui, -apple-system, Segoe UI, sans-serif" font-size="11" fill="#898781" text-anchor="start" font-weight="normal" style="">looks faster than it is</text>
+</svg>

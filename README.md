@@ -42,6 +42,11 @@ percentile formula over arrived shipments. "Including in-transit" is what you ge
 when the shipments still moving are counted as evidence. The corrected number is
 never lower — and the gap is exactly the optimism you were about to plan on.
 
+<picture>
+  <source media="(prefers-color-scheme: dark)" srcset="docs/charts/percentiles-dark.svg">
+  <img alt="Step chart of the share of shipments arrived by each day since departure. The completed-only curve reaches 80% at day 5; counting the in-transit shipments as evidence, 80% is not reached until day 6." src="docs/charts/percentiles-light.svg" width="760">
+</picture>
+
 ## Why the average is the wrong number
 
 Three problems, in increasing order of subtlety:
@@ -50,6 +55,11 @@ Three problems, in increasing order of subtlety:
    3.5 days, but planning for day 4 (the corrected median) still means being late
    half the time. Reliability lives in the tail: to be right 8 times out of 10 you
    book against the P80 — day 6 in the demo, two full days above the median.
+
+<picture>
+  <source media="(prefers-color-scheme: dark)" srcset="docs/charts/histogram-dark.svg">
+  <img alt="Histogram of completed transit days on the demo lane. The 3.5-day average sits in the middle of the distribution while the corrected P80 booking day is day 6, at the far end of the tail." src="docs/charts/histogram-light.svg" width="760">
+</picture>
 
 2. **Transit distributions are skewed.** There is a hard floor (the fastest
    physically possible trip) and a long tail (rolled cargo, port congestion,
@@ -63,6 +73,11 @@ Three problems, in increasing order of subtlety:
    the 320 in-transit shipments moves the P80 from 5 to 6 days. This tool handles
    them with the Kaplan–Meier estimator, the standard survival-analysis method for
    exactly this censoring problem.
+
+<picture>
+  <source media="(prefers-color-scheme: dark)" srcset="docs/charts/timeline-dark.svg">
+  <img alt="Timeline of recent shipments on the demo lane. Blue bars are shipments that departed and arrived. Orange bars departed but have not arrived and run into the dashed 'today' line — the longest has been at sea at least 11 days. Dropping those rows makes the lane look faster than it is." src="docs/charts/timeline-light.svg" width="760">
+</picture>
 
 ## Do this in your own tools
 
