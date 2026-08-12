@@ -208,6 +208,63 @@ def chart_histogram(frame, mode):
 
 
 # ---------------------------------------------------------------- chart 3
+def chart_skew(frame, mode):
+    """Schematic of the archetypal transit distribution — analytic, not data.
+
+    The demo data is order-delivery, truncated at 6 days, so it cannot show
+    the ocean-lane shape this section describes. The curve is a gamma density
+    shifted to a hard floor, labelled as a schematic.
+    """
+    t = TOKENS[mode]
+    floor, k, theta = 14.0, 3.0, 2.6  # floor + gamma(k, theta), mean ~= 21.8
+    xs = np.linspace(floor, 48, 300)
+    z = (xs - floor) / theta
+    dens = z ** (k - 1) * np.exp(-z)
+    dens /= dens.max()
+    mean = floor + k * theta
+
+    W, H = 760, 300
+    left, right, top, bottom = 24, 24, 74, 40
+    x0, x1, y0, y1 = left, W - right, H - bottom, top + 24
+
+    def X(v):
+        return x0 + v / 50 * (x1 - x0)
+
+    def Y(p):
+        return y0 - p * (y0 - y1)
+
+    body = [_text(20, 26, "The shape of a transit distribution", 16, t["ink"], weight="600"),
+            _text(20, 44, "Schematic of a typical ocean lane — not the demo data. A hard floor, a body, and a long tail.", 12, t["ink2"])]
+
+    # filled density curve
+    poly = " L ".join(f"{X(x):.1f} {Y(d):.1f}" for x, d in zip(xs, dens))
+    body.append(f'<path d="M {X(xs[0]):.1f} {y0:.1f} L {poly} L {X(xs[-1]):.1f} {y0:.1f} Z" '
+                f'fill="{t["arrived"]}" fill-opacity="0.16"/>')
+    body.append(f'<path d="M {poly}" fill="none" stroke="{t["arrived"]}" stroke-width="2" '
+                f'stroke-linejoin="round"/>')
+
+    # hard floor
+    body.append(_line(X(floor), y0, X(floor), Y(0.72), t["ink2"], 1.4))
+    body.append(_text(X(floor) - 6, Y(0.62), "the hard floor —", 11, t["ink2"], anchor="end"))
+    body.append(_text(X(floor) - 6, Y(0.62) + 14, "fastest possible trip;", 11, t["ink2"], anchor="end"))
+    body.append(_text(X(floor) - 6, Y(0.62) + 28, "nothing ever beats it", 11, t["ink2"], anchor="end"))
+
+    # mean marker
+    body.append(_line(X(mean), y0, X(mean), Y(0.98), t["muted"], 1.4, dash="4 3"))
+    body.append(_text(X(mean), Y(0.98) - 8, "the average sits here…", 12, t["ink2"], anchor="middle"))
+
+    # tail annotation
+    body.append(_text(X(37.5), Y(0.30), "…and says nothing about the tail:", 12, t["ink2"], anchor="middle", weight="600"))
+    body.append(_text(X(37.5), Y(0.30) + 15, "rolled cargo, port congestion, customs holds", 11, t["muted"], anchor="middle"))
+
+    body.append(_line(x0, y0, x1, y0, t["axis"], 1.2))
+    for v in (0, 10, 20, 30, 40, 50):
+        body.append(_text(X(v), y0 + 18, f"{v}", 11, t["muted"], anchor="middle", tabular=True))
+    body.append(_text(X(25), y0 + 33, "transit days", 11, t["muted"], anchor="middle"))
+    return _svg(W, H, body)
+
+
+# ---------------------------------------------------------------- chart 4
 def chart_percentiles(frame, mode):
     t = TOKENS[mode]
     completed = frame[~frame["censored"]]["transit_days"].to_numpy()
@@ -281,6 +338,7 @@ def main() -> int:
     charts = {
         "timeline": chart_timeline,
         "histogram": chart_histogram,
+        "skew": chart_skew,
         "percentiles": chart_percentiles,
     }
     for name, fn in charts.items():
