@@ -11,6 +11,11 @@ the transit day to actually book against — the percentile that matches the
 reliability you want — and it does it without silently throwing away the
 shipments that are still at sea.
 
+<picture>
+  <source media="(prefers-color-scheme: dark)" srcset="docs/charts/skew-dark.svg">
+  <img alt="Schematic density curve of a typical ocean-lane transit distribution: a hard floor at the fastest possible trip, a body, and a long right tail from rolled cargo, port congestion and customs holds. The average sits near the body and says nothing about the tail; the P80 booking day sits three days further out, partway into the tail." src="docs/charts/skew-light.svg" width="760">
+</picture>
+
 ## The 30-second version
 
 ```bash
@@ -63,12 +68,8 @@ Three problems, in increasing order of subtlety:
 
 2. **Transit distributions are skewed.** There is a hard floor (the fastest
    physically possible trip) and a long tail (rolled cargo, port congestion,
-   customs holds). The mean sits below the tail and tells you nothing about it.
-
-<picture>
-  <source media="(prefers-color-scheme: dark)" srcset="docs/charts/skew-dark.svg">
-  <img alt="Schematic density curve of a typical ocean-lane transit distribution: a hard floor at the fastest possible trip, a body, and a long right tail from rolled cargo, port congestion and customs holds. The average sits near the body and says nothing about the tail; the P80 booking day sits three days further out, partway into the tail." src="docs/charts/skew-light.svg" width="760">
-</picture>
+   customs holds). The mean sits below the tail and tells you nothing about it —
+   the shape is the curve at the top of this page.
 
 3. **The shipments still at sea are evidence, not missing data.** A shipment that
    departed 14 days ago and hasn't arrived tells you *the transit is at least 14
