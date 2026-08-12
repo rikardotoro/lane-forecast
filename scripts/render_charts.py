@@ -253,6 +253,13 @@ def chart_skew(frame, mode):
     body.append(_line(X(mean), y0, X(mean), Y(0.98), t["muted"], 1.4, dash="4 3"))
     body.append(_text(X(mean), Y(0.98) - 8, "the average sits here…", 12, t["ink2"], anchor="middle"))
 
+    # P80 marker, computed from the curve — the day this tool would tell you to book
+    cdf = np.cumsum(dens)
+    cdf /= cdf[-1]
+    p80 = float(xs[np.argmax(cdf >= 0.8)])
+    body.append(_line(X(p80), y0, X(p80), Y(0.85), t["transit"], 2))
+    body.append(_text(X(p80) + 8, Y(0.82), f"book day {p80:.0f} (P80)", 12, t["transit"], weight="600"))
+
     # tail annotation
     body.append(_text(X(37.5), Y(0.30), "…and says nothing about the tail:", 12, t["ink2"], anchor="middle", weight="600"))
     body.append(_text(X(37.5), Y(0.30) + 15, "rolled cargo, port congestion, customs holds", 11, t["muted"], anchor="middle"))

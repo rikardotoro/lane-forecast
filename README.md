@@ -67,7 +67,7 @@ Three problems, in increasing order of subtlety:
 
 <picture>
   <source media="(prefers-color-scheme: dark)" srcset="docs/charts/skew-dark.svg">
-  <img alt="Schematic density curve of a typical ocean-lane transit distribution: a hard floor at the fastest possible trip, a body, and a long right tail from rolled cargo, port congestion and customs holds. The average sits near the body and says nothing about the tail." src="docs/charts/skew-light.svg" width="760">
+  <img alt="Schematic density curve of a typical ocean-lane transit distribution: a hard floor at the fastest possible trip, a body, and a long right tail from rolled cargo, port congestion and customs holds. The average sits near the body and says nothing about the tail; the P80 booking day sits three days further out, partway into the tail." src="docs/charts/skew-light.svg" width="760">
 </picture>
 
 3. **The shipments still at sea are evidence, not missing data.** A shipment that
