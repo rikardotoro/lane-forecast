@@ -12,8 +12,8 @@ from lane_forecast.report import analyse, render, to_dict
 app = typer.Typer(add_completion=False, help="Book against the percentile that holds.")
 console = Console()
 
-DEMO = Path(__file__).parent.parent.parent / "examples" / "demo.csv"
-
+EXAMPLES = Path(__file__).parent / "examples"
+DEMO = EXAMPLES / "demo.csv"
 
 @app.command()
 def main(
@@ -58,7 +58,6 @@ def main(
         print(json.dumps(to_dict(analysis), indent=2))
     else:
         render(analysis)
-
 
 if __name__ == "__main__":
     app()

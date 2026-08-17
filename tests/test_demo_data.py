@@ -2,7 +2,7 @@ from pathlib import Path
 
 from lane_forecast.data import add_transit_days, load_shipments
 
-DEMO = Path(__file__).parent.parent / "examples" / "demo.csv"
+DEMO = Path(__file__).parent.parent / "src" / "lane_forecast" / "examples" / "demo.csv"
 
 
 def test_demo_file_is_small():

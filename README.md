@@ -176,7 +176,7 @@ lane-forecast --data export.csv --lane CNSHA-NLRTM --json   # machine-readable
 - **It will not extrapolate** to a lane you've never shipped. No history, no
   estimate, no apology.
 - **The demo data is order-delivery data, not ocean transit.** It's a CC0 public
-  dataset reshaped to the tool's schema (see [examples/SOURCE.md](examples/SOURCE.md));
+  dataset reshaped to the tool's schema (see [examples/SOURCE.md](src/lane_forecast/examples/SOURCE.md));
   it proves the method on real promised-versus-actual figures, not sea-lane
   performance.
 

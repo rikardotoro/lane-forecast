@@ -340,7 +340,7 @@ def chart_percentiles(frame, mode):
 
 
 def main() -> int:
-    frame = add_transit_days(load_shipments(ROOT / "examples" / "demo.csv"))
+    frame = add_transit_days(load_shipments(ROOT / "src" / "lane_forecast" / "examples" / "demo.csv"))
     OUT.mkdir(parents=True, exist_ok=True)
     charts = {
         "timeline": chart_timeline,
